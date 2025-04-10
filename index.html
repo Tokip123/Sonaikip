@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+          }
+        .navbar{
+            background-color: #1db954;
+            display:flex;
+            top:0;
+            gap: 40px;
+            justify-content: center;
+            padding: 15px 0;
+            top: 0;
+        }
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: #1db954;
+            border-radius: 6px;
+        }
+        .cards{
+            margin: 30px;
+            display: flex;
+            gap:20px;
+        }
+        .card{
+            background-color: #181818;
+            padding: 18px;
+            border-radius:40px;
+            width: 180px;
+        }
+        .card img{
+            width: 100%;
+            border-radius:6px;
+            border:3px solid grey;
+            height: 140px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card p {
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+            overflow-wrap: break-word;
+          }
+          
+        .image:hover {
+            transform: scale(1.05);
+        }
+        .image img{
+                width: 150px;         
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover; 
+                border: 2px solid #fff; 
+              } 
+        .image p{
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+        }    
+        .footer {
+        background-color: #1db954;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #282828;
+        color: #888;
+        font-size: 0.9em;
+        color:white; 
+        }
+  
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+        <a href="#trending">Trending</a>
+        <a href="#artists">Artists</a>
+        <a href="#albums">Albums</a>
+        <a href="#radio">Radio</a>
+        <a href="#charts">Charts</a>
+      </div>
+      <main>
+        <div class="main">
+            <div class="section" id="trending">
+                <h2>Trending Songs</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.28_0dcbbe0e.jpg">
+                        <h4 >Pal Pal</h4>
+                        <p>Afusic, AliSoomroMusic</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.25_4949e752.jpg">
+                        <h4>Phele Bhi Main</h4>
+                        <p>Vishal Mishra,Raj Shekhar</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.26_ace93bc9.jpg">
+                        <h4>Heeriye(feat.Arjit Singh)</h4>
+                        <p>Jasleen Royal,Arjit Singh ,Dulquerb Salmaan</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.27_d95b80a2.jpg">
+                        <h4>Apna Bana le</h4>
+                        <p>Sachin-Jigar,Arjit Singh,Amitabh Bhattacharya</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.26_91ad5f47.jpg">
+                        <h4> Jo Tum Mere Ho</h4>
+                        <p>Anuv Jain</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.24_9612cca0.jpg">
+                        <h4>Tujhe Kitna Chahne Lage</h4>
+                        <p>Arjit Singh,Mithoon</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.27_c04c7b3e.jpg">
+                        <h4>Janiye(from the Netflix Film"Chor Nikal Ke Bhaga")
+                        </h4>
+                        <p>Vishal Mishra ,Rashmeet Kaur</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.25_e4445906.jpg">
+                        <h4>Aaj Ki Raat</h4>
+                        <p>Sachin-Jigar,Madhubanti Bagchi,Divya Kumar,Amitabh Bhattacharya</p>
+                    </div>
+                    <div class="card">
+                        <img src="WhatsApp Image 2025-04-10 at 09.07.27_510a2635.jpg">
+                        <h4>Tum Se</h4>
+                        <p>Raghav Chaitanya,Varun Jain,Sachin-Jigar,Indraneel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="artists">
+                <h2>Popular Artists</h2>
+                <div class="cards">
+                    <div class="image">
+                        <img src="Ariana Grande.png">
+                        <h4>Ariana Grande</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Beyonce.png">
+                        <h4>Beyonce</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Drake.png">
+                        <h4>Drake</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Dua Lipa.png">
+                        <h4>Dua lipa</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Ed Sheeran.png">
+                        <h4>Ed Sheeran</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Rihanna.png">
+                        <h4>Rihanna</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Taylor Swift.png">
+                        <h4>Taylor Swift</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="Harry Styles.png">
+                        <h4>Harry Styles</h4>
+                        <p>Artist/p>
+                    </div>
+                    <div class="image">
+                        <img src="Katy Perry.png">
+                        <h4>Katy Perry</h4>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="albums">
+                <h2>Popular albums and singers</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="Bellie Eilish.png">
+                        <h4>WHEN WE ALL FALL ASLEEP,WHERE DO WE GO?</h4>
+                        <p>Bellie Ellish</p>
+                    </div>
+                    <div class="card">
+                        <img src="Hollywood's Bleeding by Post Melone.png">
+                        <h4>
+                            Hollywood's Bleeding(2019)
+                        </h4>
+                        <p>Post Malone</p>
+                    </div>
+                    <div class="card">
+                        <img src="Lover by Taylor Swift.png">
+                        <h4>LOVER</h4>
+                        <p>Taylor Swift</p>
+                    </div>
+                    <div class="card">
+                        <img src="Don't smile at me by Billie Eilish.png">
+                        <h4>Don't smile at me</h4>
+                        <p>Billie Eilish</p>
+                    </div>
+                    <div class="card">
+                        <img src="Starboy by The Weeknd.png">
+                        <h4>Starboy</h4>
+                        <p>The weeknd</p>
+                    </div>
+                    <div class="card">
+                        <img src="Thank U,Next by Ariana Grande.png">
+                        <h4>Thank U,Next</h4>
+                        <p>Ariana Grande</p>
+                    </div>
+                    <div class="card">
+                        <img src="Unorthodox Jukebox by Bruno Mars.png">
+                        <h4>Unorthodox Jukebox</h4>
+                        <p>Bruno Mars</p>
+                    </div>
+                    <div class="card">
+                        <img src="Views By Drake.png">
+                        <h4>Views</h4>
+                        <p>Drake</p>
+                    </div>
+                    <div class="card">
+                        <img src="Ed Sheeran.png">
+                        <h4>%</h4>
+                        <p>Ed Sheeran</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="radio">
+                <h2>Popular radio</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="1.jpg">
+                        <p>With Eric Saade,Alcazar,David Lindgren and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="2.jpg">
+                        <p> With AFRONOM,Marc Moon,Yakal Nubis and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="3.jpg">
+                        <p>With Stephen Schwartz,Kristin Chenoweth,SIX and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="4.png">
+                        <p>With Nada Surf,The Breeders,Beck and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="5.jpg">
+                        <p>With DJ Comento, Glenn Callin,Bennie Carl and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="6.jpg">
+                        <p>With Ariana Grande ,Cynthia Erivo,Sabrina Carpenter and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="7.png">
+                        <p>With Mohammed Rafi,Mukesh,Tabassum and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="8.png">
+                        <p>With Sachin-Jigar ,Mithoon,Vishal-Shekar and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="9.png">
+                        <p>With Vishal-Shekar,Atif Aslam,Mohit Chauhan and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <div class="section" id="charts">
+        <h2>Featured Charts</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.16_3e2abdba.jpg">
+            <p>Your weekly update of the most played tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.16_15ec8bc8.jpg">
+            <p>Your weekly update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.15_0c9dfefa.jpg">
+            <p>Your daily update of the most plsyed tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.15_0f3a8d4b.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.14_c925d885.jpg">
+            <p>Your daily update of the most viral tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="WhatsApp Image 2025-04-10 at 09.07.15_ace23611.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <p>Designed by:Soneikip Rangla</p>
+        <p>BCA,2nd Years(4th Semester)<br>
+        Roll no:BC2093<br>
+        NIELIT,IMPHAl</p>
+      </footer>
+    
+</body>
+</html>
